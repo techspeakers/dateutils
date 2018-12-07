@@ -1,0 +1,22 @@
+{
+  "name": "@techspeakers/dateutils",
+  "version": "0.1.0",
+  "description": "JavaScript date utilities",
+  "main": "dates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techspeakers/dateutils.git"
+  },
+  "author": "Flaki <git@flaki.hu>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/techspeakers/dateutils/issues"
+  },
+  "homepage": "https://github.com/techspeakers/dateutils#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
