@@ -16,13 +16,8 @@ function fromCompactUTC(d) {
 }
 
 function startOfDayUTC(date) {
-  const d = date && date instanceof Date ? date : new Date()
-    d.setUTCHours(0)
-    d.setUTCMinutes(0)
-    d.setUTCSeconds(0)
-    d.setUTCMilliseconds(0)
-
-  return d
+  d = date ? new Date(date) : new Date()
+  return new Date( Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()) + new Date().getTimezoneOffset()*60*1000 )
 }
 
 
